@@ -1,12 +1,12 @@
 # How-to-download-file-using-Custom-PHP
 
-``` HTML
-<a href="download.php?file=<?php echo urlencode($link); ?>">Download File</a>
 
 ```PHP
-// download.php code
+<a href="download.php?file=<?php echo urlencode($link); ?>">Download File</a>
+
 
 <?php
+// download.php code
 if(isset($_REQUEST["file"]))
 {
     $file = urldecode($_REQUEST["file"]); // Decode URL-encoded string
